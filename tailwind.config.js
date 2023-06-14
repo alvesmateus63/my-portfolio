@@ -8,7 +8,10 @@ module.exports = {
         secondary: '#BF04B3',
         textPrimary: '#FFFFFF',
         textSeconday: '#CFCFCF'
-      }
+      },
+      listStyleImage: {
+        check: 'url("/images/Vector.png")',
+      },
     },
   },
   plugins: [],

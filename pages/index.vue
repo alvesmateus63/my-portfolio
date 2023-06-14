@@ -1,27 +1,25 @@
 <template>
-  <div class="bg-primary py-16 px-2.5 grid-cols-1 sm:w-full sm:h-full md:w-screen md:h-screen">
-    <!--Header-->
-    <Header />
-    <!--About-->
-    <About />
-    <!--Experience-->
-    <Experience />
-    <!--Languages-->
-    <Languages :langs="['🇧🇷 Português - Nativo', '🇺🇲 Inglês - Avançado']" />
-    <!--Education-->
-    <Education />
-    <!--Social Media + Contact-->
-    <SocialMedia />
-    <!--Knowledge-->
-<!--    <div>-->
-<!--      <h3>Conhecimento</h3>-->
-<!--      <p>React</p>-->
-<!--      <p>Vue</p>-->
-<!--      <p>Javascript</p>-->
-<!--      <p>Typescript</p>-->
-<!--      <p>Laravel</p>-->
-<!--      <p>Symfony</p>-->
-<!--    </div>-->
+  <div class="bg-primary  ">
+    <div class="py-16 px-2.5 grid-cols-1 sm:w-full sm:h-full md:gap-6 md:px-10 md:w-screen md:h-screen md:grid md:grid-cols-2 md:grid-rows-3 xl:max-w-6xl xl:mx-auto">
+      <!--Header-->
+      <Header />
+      <!--About-->
+      <About />
+      <!--Experience-->
+      <Experience />
+
+      <!--Knowledge-->
+      <Knowledge :langs="['React', 'Vue', 'Typescript', 'Laravel', 'Symfony']" />
+
+      <!--Languages + Education-->
+      <div class=" md:md:self-center md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2">
+        <Languages :langs="['🇧🇷 Português - Nativo', '🇺🇲 Inglês - Avançado']" />
+
+        <Education />
+      </div>
+      <!--Social Media + Contact-->
+      <SocialMedia />
+    </div>
   </div>
 </template>
 <script setup lang="ts">
